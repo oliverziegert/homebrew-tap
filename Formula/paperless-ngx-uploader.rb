@@ -5,21 +5,21 @@
 class PaperlessNgxUploader < Formula
   desc "Example rust release."
   homepage "https://github.com/oliverziegert/homebrew-tap"
-  version "0.0.15"
+  version "0.1.0"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oliverziegert/homebrew-tap/releases/download/0.0.15/paperless-ngx-uploader_Darwin_x86_64.tar.gz"
-      sha256 "6a483e55761c6284f938a0322c0c03580060046a1a839d10fc91b1f56e23a443"
+      url "https://github.com/oliverziegert/homebrew-tap/releases/download/0.1.0/paperless-ngx-uploader_Darwin_x86_64.tar.gz"
+      sha256 "6a19d183075e446fdc54998ee8b08f17b8b6c37962552addb0ffa6557a7c2438"
 
       def install
         bin.install "paperless-ngx-uploader"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oliverziegert/homebrew-tap/releases/download/0.0.15/paperless-ngx-uploader_Darwin_arm64.tar.gz"
-      sha256 "2bb9e5e55f999a466cc5c1c338111110f413b58185c150a9190751ebf0d8a659"
+      url "https://github.com/oliverziegert/homebrew-tap/releases/download/0.1.0/paperless-ngx-uploader_Darwin_arm64.tar.gz"
+      sha256 "686b9b24a331b9ada83e336a519508e48ed11dbe7d1ffbdccf8f4402a687bc8f"
 
       def install
         bin.install "paperless-ngx-uploader"
@@ -30,8 +30,8 @@ class PaperlessNgxUploader < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/oliverziegert/homebrew-tap/releases/download/0.0.15/paperless-ngx-uploader_Linux_x86_64.tar.gz"
-        sha256 "cd6af37e781da996537b3d1ece0348186eb22f7426819135c76b6ff9dba27fb8"
+        url "https://github.com/oliverziegert/homebrew-tap/releases/download/0.1.0/paperless-ngx-uploader_Linux_x86_64.tar.gz"
+        sha256 "ff021819dd6eebc4d07b545ea146e8749a5802a5d9cb19d83720d51c7355ce65"
 
         def install
           bin.install "paperless-ngx-uploader"
@@ -40,8 +40,8 @@ class PaperlessNgxUploader < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/oliverziegert/homebrew-tap/releases/download/0.0.15/paperless-ngx-uploader_Linux_arm64.tar.gz"
-        sha256 "166592ab178f349992967dccd3531c6c01e01511d45db4b40eed936c1ee99b16"
+        url "https://github.com/oliverziegert/homebrew-tap/releases/download/0.1.0/paperless-ngx-uploader_Linux_arm64.tar.gz"
+        sha256 "7728c75928b4bae3dcd8813f24384e712cf6da7e042d10e4afd33d8669715209"
 
         def install
           bin.install "paperless-ngx-uploader"
